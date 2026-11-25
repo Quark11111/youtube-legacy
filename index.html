@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Legacy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>YouTube Legacy</h1>
+        <input id="search" type="text" placeholder="Поиск видео...">
+        <button onclick="searchVideos()">Найти</button>
+    </div>
+
+    <div id="content">
+        <h2>Рекомендации</h2>
+        <div id="videos"></div>
+    </div>
+
+    
+<div id="player" style="display:none;">
+
+    <button onclick="closePlayer()">НАЗАД</button>
+
+    <iframe
+        id="youtubePlayer"
+        width="1100"
+        height="619"
+        src=""
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
